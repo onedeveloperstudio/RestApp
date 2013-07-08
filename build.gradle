@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompability = 1.7
+
+repositories{
+ mavenCentral()
+}
+
+def uniqProjectName = project.path.substring(1).replace(':', '-');
+  uniqProjectName = uniqProjectName ? uniqProjectName : "RestApp"
